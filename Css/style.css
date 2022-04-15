@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Major Mono Display', monospace;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Media/images/image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo {
+    width: 140px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 1s;
+}
+.logo:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    background: #000000;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    transition: 0.8s;
+}
+.navbar ul li:hover {
+    transform: scale(1.2);
+    text-decoration-line: underline;
+}
+.navbar ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 17px;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col {
+    margin: 6%;
+}
+
+.left-col h1 {
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 1s;
+}
+.left-col h1:hover {
+    color: #5f5f5f;
+    padding-left: 20px;
+}
+.left-col h1 span {
+    font-family: 'Major Mono Display', monospace;
+    color: #ffffff;
+    transition: 1s;
+}
+.left-col h1 span:hover {
+    color: #5f5f5f;
+    padding-left: 20px;
+}
+.right-col {
+    flex: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p {
+    font-size: 20px;
+    color: #5f5f5f;
+    font-weight: bolder;
+    position: relative;
+    align-items: center;
+    padding-left: 60%;
+}
+#icon {
+    width: 80px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music website</title>
+    <!-- favicon Of Website  -->
+    <link rel="icon" href="./Media/icons/electronic-device-headphones-yellow-google-play-music-30f8fada1937e9e4085a5251ea722c42.png">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start NavBar  -->
+        <div class="navbar">
+            <img src="./Media/icons/m_merged (1)_preview_rev_1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Specifications</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- End NavBar  -->
+        <!-- Start Content  -->
+        <div class="content">
+            <div class="left-col">
+                <h1>
+                    <span>The</span><br>
+                    Real <br>
+                    <span>Sound</span>
+                </h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="./Media/images/play.png" style="cursor: pointer;" id="icon">
+            </div>
+        </div>
+        <!-- End Content  -->
+    </div>
+    <!-- End Container -->
+
+    <!-- Start Audio -->
+    <audio id="mysong" src="./Media/Music/Louis_Armstrong_-_What_a_Wonderful_World.mp3" type="audio/mp3">
+    </audio>
+    <!-- End Audio -->
+
+    <!-- Main Js Script -->
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+        mysong.play();
+        if(mysong.paused) {
+        mysong.play();
+        icon.src = "./Media/images/pause.png";
+        }else {
+        ysong.pause();
+        icon.src = "./Media/images/play.png";
+        }
+    }  
+    </script>
+</body>
+</html>
